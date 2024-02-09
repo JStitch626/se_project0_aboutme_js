@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Permanent Marker";
+  src: url(./fonts/PermanentMarker.ttf) format("truetype"),
+    url(./fonts/PermanentMarker.woff) format("woff");
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  font-family: "Inter", sans-serif;
+  background: #eeeeee;
+}
+
+.header {
+  height: 100vh;
+  /* add missing declarations */
+  /* DONE */
+  background-image: url(./images/esteban-castle-MCJE6Zd0cLs-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  /* see brief section 2 */
+  text-align: center;
+}
+
+/* add a CSS rule for the page title here */
+/* DONE */
+.header-title {
+  font-family: "Permanent Marker", cursive;
+  font-size: 140px;
+  line-height: 140px;
+  color: white;
+  text-transform: uppercase;
+  max-width: 1240px;
+  margin: auto;
+/* Additional code for header-title below is not on the brief. For stylistic flourish only. */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* add missing declarations */
+  /* DONE */
+  max-width: 790px;
+  margin: 100px auto 50px;
+}
+
+/* add CSS rules for cards and their content here */
+/* DONE */
+.card {
+  width: 350px;
+  margin-bottom: 60px;
+  padding: 45px 45px 70px;
+  background: #fff;
+  box-shadow: 4px 4px 5px rgba(0, 132, 255, .4);
+}
+
+.card-title {
+  font-family: "Permanent Marker", cursive;
+  font-size: 24px;
+  margin-bottom: 10px;
+  /* Additional code for card-title below is not on the brief. For stylistic flourish only. */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+.card-text {
+  font-size: 16px;
+}
+
+.card-image {
+  width: 100%;
+  margin-bottom: 25px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.footer {
+  display: flex;
+  /* add missing declarations */
+  /* DONE */
+  min-height: 300px;
+  background-color: #000;
+}
+
+/* add a CSS rule for the footer signature */
+/* DONE */
+.footer-author {
+  color: #fff;
+  font-size: 24px;
+  margin: auto;
+}
